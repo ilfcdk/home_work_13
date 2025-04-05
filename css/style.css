@@ -18,73 +18,22 @@ h1, h4 {
 .svg_main {
     width:150px;
     height:120px;
-    margin:10px;
 }
 
-
-.svg_square {
-    fill:rgb(0,0,255);
-    stroke-width:5px;
-    stroke:rgb(231, 145, 17);
-    x:35px;
-    y:20px;
-    width:80px;
-    height:80px;
-}
 
 /*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
 .svg_square:hover{
     animation: fill-color-change 10s ease-in 0s 2 alternate none running;
 }
 
-
-.svg_rectangle {
-    fill:rgb(103, 217, 113);
-    stroke-width:5px;
-    stroke:rgb(191, 15, 15);
-    x:15px;
-    y:20px;
-    width:120px;
-    height:80px;
-}
-
-/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
 .svg_rectangle:hover {
     animation: stroke-color-change 10s linear 0s infinite normal forwards running;
 }
 
-
-
-.svg_circle {
-    fill:rgb(193, 135, 190);
-    stroke-width:5px;
-    stroke:rgb(35, 13, 238);
-    cx:75px;
-    cy:60px;
-    r:40px;
-    width:80px;
-    height:80px;
-}
-
-/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
 .svg_circle:hover {
     animation: color-change 10s ease-in-out 0s 1 normal none running;
 }
 
-
-.svg_ellipse {
-    fill:rgb(190, 199, 22);
-    stroke-width:5px;
-    stroke:rgb(22, 40, 16);
-    cx:75px;
-    cy:60px;
-    rx:60px;
-    ry:40px;    
-    width:120px;
-    height:80px;
-}
-
-/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
 .svg_ellipse:hover {
     animation: color-change 5s ease-out 1s infinite reverse none running;
 }
