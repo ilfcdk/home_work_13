@@ -1,0 +1,150 @@
+h1, h4 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.svg_container{
+    width:100%;
+    height:100%;
+    background-color:rgb(195, 212, 155);
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.svg_main {
+    width:150px;
+    height:120px;
+    margin:10px;
+}
+
+
+.svg_square {
+    fill:rgb(0,0,255);
+    stroke-width:5px;
+    stroke:rgb(231, 145, 17);
+    x:35px;
+    y:20px;
+    width:80px;
+    height:80px;
+}
+
+/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
+.svg_square:hover{
+    animation: fill-color-change 10s ease-in 0s 2 alternate none running;
+}
+
+
+.svg_rectangle {
+    fill:rgb(103, 217, 113);
+    stroke-width:5px;
+    stroke:rgb(191, 15, 15);
+    x:15px;
+    y:20px;
+    width:120px;
+    height:80px;
+}
+
+/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
+.svg_rectangle:hover {
+    animation: stroke-color-change 10s linear 0s infinite normal forwards running;
+}
+
+
+
+.svg_circle {
+    fill:rgb(193, 135, 190);
+    stroke-width:5px;
+    stroke:rgb(35, 13, 238);
+    cx:75px;
+    cy:60px;
+    r:40px;
+    width:80px;
+    height:80px;
+}
+
+/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
+.svg_circle:hover {
+    animation: color-change 10s ease-in-out 0s 1 normal none running;
+}
+
+
+.svg_ellipse {
+    fill:rgb(190, 199, 22);
+    stroke-width:5px;
+    stroke:rgb(22, 40, 16);
+    cx:75px;
+    cy:60px;
+    rx:60px;
+    ry:40px;    
+    width:120px;
+    height:80px;
+}
+
+/*animation- [name duration timing-function delay iteration-count direction fill-mode play-state]*/
+.svg_ellipse:hover {
+    animation: color-change 5s ease-out 1s infinite reverse none running;
+}
+
+@keyframes color-change {
+    0% {
+        fill: rgb(0, 0, 255); /* Initial fill color */
+        stroke: rgb(28, 26, 26);
+    }
+    25% {
+        fill: rgb(20, 151, 221); /* Midpoint fill color */
+        stroke: rgb(54, 46, 46);
+    }
+    50% {
+        fill: rgb(17, 216, 20); /* Midpoint fill color */
+        stroke: rgb(122, 72, 72);
+    }
+    75% {
+        fill: rgb(217, 239, 16); /* Midpoint fill color */
+        stroke: rgb(148, 48, 51);
+    }
+    100% {
+        fill: rgb(46, 43, 41); /* Final fill color */
+        stroke: rgb(238, 16, 16);
+    }
+}
+
+@keyframes stroke-color-change {
+    0% {
+        stroke: rgb(0, 0, 0); /* Initial stroke color */
+    }
+    25% {
+        stroke: rgb(0, 255, 0); /* Midpoint stroke color */
+    }
+    50% {
+        stroke: rgb(255, 0, 0); /* Midpoint stroke color */
+    }
+    75% {
+        stroke: rgb(0, 0, 255); /* Midpoint stroke color */
+    }
+    100% {
+        stroke: rgb(224, 231, 26); /* Final stroke color */
+    }
+}
+
+@keyframes fill-color-change {
+    0% {
+        fill: rgb(0, 0, 255); /* Initial fill color */
+    }
+    25% {
+        fill: rgb(217, 16, 227); /* Midpoint fill color */
+    }
+    50% {
+        fill: rgb(13, 255, 0); /* Midpoint fill color */
+    }
+    75% {
+        fill: rgb(235, 145, 12); /* Midpoint fill color */
+    }
+    100% {
+        fill: rgb(14, 15, 14); /* Final fill color */
+    }
+}
+
